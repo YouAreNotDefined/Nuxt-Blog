@@ -13,6 +13,11 @@ export default {
   components: {
     Header,
     Footer
+  },
+  async asyncData ({ $content, params }) {
+    const query = await $content('articles').limit(15)
+    const articles = await query.fetch()
+    return { articles }
   }
 }
 </script>

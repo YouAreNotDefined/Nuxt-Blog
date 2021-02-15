@@ -1,6 +1,6 @@
 <template>
-  <ul class="d-flex flex-wrap mt-5 mb-5" max-width="1045">
-    <li v-for="(num, index) in nums" :key="index" class="mr-5">
+  <ul class="d-flex flex-wrap mx-auto">
+    <li v-for="(num, index) in nums" :key="index" class="mr-4 mb-4">
       <v-card
         class="mx-auto"
         max-width="345"
@@ -45,3 +45,6 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style scoped>
+</style>

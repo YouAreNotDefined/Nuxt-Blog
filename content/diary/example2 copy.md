@@ -1,5 +1,5 @@
 ---
-title: Example1
+title: Example3
 subtitle: Learn how to use @nuxt/content.
 date: 2021.2.20
 flag: false

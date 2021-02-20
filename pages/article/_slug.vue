@@ -1,6 +1,8 @@
 <template>
   <v-app>
     <Header></Header>
+    <h1>{{ article.title }}</h1>
+    <nuxt-content :document="article" />
     <Footer></Footer>
   </v-app>
 </template>
@@ -15,9 +17,8 @@ export default {
     Footer
   },
   async asyncData ({ $content, params }) {
-    const query = await $content('articles').limit(15)
-    const articles = await query.fetch()
-    return { articles }
+    const article = await $content('article', params.slug).fetch()
+    return { article }
   }
 }
 </script>

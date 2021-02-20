@@ -3,8 +3,8 @@
     class="mx-auto"
     color="#7CB342"
     dark
-    max-width="250"
-    max-height="500"
+    max-width="270"
+    height="400"
   >
     <v-card-title>
       <span class="title font-weight-light">About me</span>

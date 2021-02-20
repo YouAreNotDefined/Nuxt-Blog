@@ -7,3 +7,12 @@
     </v-col>
   </v-footer>
 </template>
+
+<style scoped>
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+</style>

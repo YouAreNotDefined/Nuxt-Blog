@@ -1,10 +1,10 @@
 <template>
   <v-app>
     <Header></Header>
-    <div class="d-flex mt-10 mb-10 mx-auto" style="max-width: 1300px;">
-      <List></List>
+    <main class="d-flex mt-10 mb-10 mx-auto" style="max-width: 1300px;">
+      <List :articles="articles"></List>
       <About></About>
-    </div>
+    </main>
     <Footer></Footer>
   </v-app>
 </template>
@@ -16,6 +16,10 @@ import List from '~/components/List.vue'
 import About from '~/components/About.vue'
 
 export default {
+  async asyncData ({ $content }) {
+    const articles = await $content('article').fetch()
+    return { articles }
+  },
   components: {
     Header,
     Footer,

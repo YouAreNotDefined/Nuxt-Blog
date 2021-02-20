@@ -1,15 +1,15 @@
 ---
-title: Example1
+title: Example4
 description: Learn how to use @nuxt/content.
 date: 2021.2.20
 category: Nuxt.js
 ---
 
-## Example1
+## Example4
 
 *list1
 *list2
 
-### First
+### Second
 
 This is example.

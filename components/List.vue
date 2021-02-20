@@ -1,28 +1,29 @@
 <template>
-  <ul class="d-flex flex-wrap mx-auto">
-    <li v-for="(num, index) in nums" :key="index" class="mr-4 mb-4">
+  <ul class="d-flex flex-wrap mx-auto pl-0">
+    <li v-for="(article, index) in articles" :key="index" class="mr-4 mb-5">
       <v-card
         class="mx-auto"
         max-width="345"
       >
         <v-card-text>
-          <div>Word of the Day {{ num }}</div>
+          <div>{{ article.date }}</div>
           <p class="display-1 text--primary">
-            be•nev•o•lent
+            {{ article.title }}
           </p>
-          <p>adjective</p>
+          <p>{{ article.category }}</p>
           <div class="text--primary">
-            well meaning and kindly.<br>
-            "a benevolent smile"
+            {{ article.description }}
           </div>
         </v-card-text>
         <v-card-actions>
-          <v-btn
-            text
-            color="deep-purple accent-4"
-          >
-            Learn More
-          </v-btn>
+          <nuxt-link :to="article.path">
+            <v-btn
+              text
+              color="deep-purple accent-4"
+            >
+              Learn More
+            </v-btn>
+          </nuxt-link>
         </v-card-actions>
       </v-card>
     </li>
@@ -33,16 +34,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data(){
-    return {
-      nums: [0,1,2,3,4,5,6,7]
-    }
-  },
-  async asyncData ({ $content, params }) {
-    const query = await $content('articles').limit(15)
-    const articles = await query.fetch()
-    return { articles }
-  }
+  props: { articles: Array }
 })
 </script>
 

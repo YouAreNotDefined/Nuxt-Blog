@@ -41,7 +41,6 @@ body, html {
   display:block;
 }
 body {
-  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 img {
@@ -62,5 +61,12 @@ btn {
   background: none;
   border: 0;
   cursor: pointer;
+}
+
+.v-application{
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif !important;
+}
+.on-hover{
+  opacity: 0.7;
 }
 </style>

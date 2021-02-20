@@ -1,13 +1,12 @@
 ---
 title: Example2
-description: Learn how to use @nuxt/content.
+subtitle: Learn how to use @nuxt/content.
+date: 2021.2.20
+flag: false
 ---
 
-## Example2
-
+I wanna quit job
+The reson of that are
 *list1
 *list2
-
-### Second
-
-This is example.
+But This is example.

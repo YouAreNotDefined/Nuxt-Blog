@@ -7,6 +7,8 @@ flag: false
 
 I wanna quit job
 The reson of that are
-*list1
-*list2
+
+- list1
+- list2
+
 But This is example.

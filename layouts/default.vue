@@ -69,4 +69,14 @@ btn {
 .on-hover{
   opacity: 0.7;
 }
+
+@media screen and (min-width: 767px) {
+  .main{
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
 </style>

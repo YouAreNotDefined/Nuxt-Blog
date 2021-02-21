@@ -1,9 +1,9 @@
 <template>
   <ul class="d-flex flex-wrap mx-auto pl-0">
-    <li v-for="(diary, index) in diaries" :key="index" class="mr-5 mb-5">
+    <li v-for="(diary, index) in diaries" :key="index" class="mr-4 mb-5">
       <v-card
         class="mx-auto"
-        max-width="320"
+        max-width="300"
       >
         <v-img
           src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"

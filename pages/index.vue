@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <Header></Header>
-    <main class="d-flex mt-10 mb-10 mx-auto" style="max-width: 1300px;">
+    <main class="d-flex mt-10 mb-10 mx-auto main">
       <List :articles="articles"></List>
       <About></About>
     </main>

@@ -1,5 +1,5 @@
 <template>
-  <header class="text-center pb-7 pt-7 d-flex mx-auto justify-space-between" style="width: 1300px;">
+  <header class="text-center pb-7 pt-7 d-flex mx-auto justify-space-between" style="width: 1200px;">
     <v-hover v-slot="{ hover }">
       <h1 class="mr-10" :class="{ 'on-hover': hover }">
         <router-link to="/" class="black--text"><img src="" alt="Bouzuweed"></router-link>

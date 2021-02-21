@@ -1,15 +1,15 @@
 ---
-title: Example1
+title: Nuxt/contentでブログをつくる
 description: Learn how to use @nuxt/content.
 date: 2021.2.20
 category: Nuxt.js
 ---
 
-## Example1
+## What is Example1
 
-*list1
-*list2
+* list1
+* list2
 
-### First
+## First
 
 This is example.

@@ -3,7 +3,7 @@
     class="mx-auto"
     color="#7CB342"
     dark
-    max-width="270"
+    max-width="250"
     height="400"
   >
     <v-card-title>

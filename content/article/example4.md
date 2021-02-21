@@ -5,10 +5,10 @@ date: 2021.2.20
 category: Nuxt.js
 ---
 
-## Example4
+## What is Example4
 
-*list1
-*list2
+* list1
+* list2
 
 ### Second
 

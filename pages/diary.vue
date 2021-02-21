@@ -1,12 +1,10 @@
 <template>
   <v-app>
     <Header></Header>
-    <div class="d-flex mt-10 mb-10 mx-auto" style="max-width: 1300px;">
-      <main>
-        <Diaries :diaries="diaries"></Diaries>
-        <About></About>
-      </main>
-    </div>
+    <main class="d-flex mt-10 mb-10 mx-auto main">
+      <Diaries :diaries="diaries"></Diaries>
+      <About></About>
+    </main>
     <Footer></Footer>
   </v-app>
 </template>
